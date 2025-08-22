@@ -174,9 +174,14 @@ section {
 
 .avatar {
   align-items: center;
+  flex-grow: 1;
 }
 .avatar img {
   margin-right: 12px;
+}
+.avatar-article {
+  position: absolute;
+  bottom: 0;
 }
 
 .divider {
@@ -204,7 +209,7 @@ section {
 }
 
 .articles-text {
-  margin: 12px 0;
+  margin: 12px 0 40px;
 }
 
 .load-btn {
@@ -212,13 +217,14 @@ section {
   margin: 0 auto 70px;
 }
 
-.column {
+.card {
+  position: relative;;
   flex-direction: column;
   width: 300px;
   margin-bottom: 80px;
 }
 @media (max-width: 900px){
-  .column {
+  .card {
     flex-direction: column;
     width: 300px;
     margin: 0 auto 50px;
